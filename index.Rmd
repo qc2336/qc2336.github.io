@@ -1,13 +1,15 @@
 ---
-author: "Qiran Chen"
-title: "Qiran Chen's Resume"
+title: "Qiran Chen"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+    theme: cosmo
 ---
+# This is a website about me
 
-# This is Qiran Chen's Resume
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+##
+[Resume](about.html)
+
+

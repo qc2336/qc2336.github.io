@@ -1,0 +1,20 @@
+---
+title: "Qiran Chen"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+---
+# Education
+
+  **Columbia University Mailman School of Public Health**
+   <li>Degree Master of Science</li>
+   <li>Major Biostatistics </li>
+   <li>GPA N/A </li>
+  
+  
+   **University of Michigan Ann Arbor**
+   <li> Degree Bachelor of Science </li>
+   <li> Major Biopsychology, Cognition and Neuroscience </li>
+   <li> GPA 3.8/4.0 Major GPA 3.9/4.0 </li>
