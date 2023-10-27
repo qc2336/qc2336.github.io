@@ -32,21 +32,30 @@ Column {data-width=650}
 
 ```{r}
 instacart |>
-  filter(aisle%in%c("fresh fruits", "fresh vegetables"))|>
-  group_by(aisle,order_number)|>
-  summarize(order_number=sum(order_number))|>
-  mutate(text_label = str_c("order number", order_number, "aisle" , aisle)) |> 
-  plot_ly(x = ~aisle, y = ~order_number, type = "box", text = ~text_label, alpha = 0.5)
+  plot_ly(x= ~department, y = ~order_hour_of_day, color = ~department, type = "box", colors = "viridis")
+
+ 
 ```
 
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### 
+## Number of Items in Each Aisle via Scatterplot
 
 ```{r}
-instacart
+aisle_graph=instacart|>
+  count(aisle,name="n_items")|>
+  filter(n_items>10000)|>
+  mutate(aisle=fct_reorder(aisle,n_items))|>
+  ggplot(aes(x=aisle,y=n_items))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle = 65, vjust = 1, hjust=1))+
+  ggtitle("Number of Items in Each Aisle")
+  
+ggplotly(aisle_graph)
+  
+  
 ```
 
 ### Bar Chart of Top 10 Product Reordered
@@ -62,7 +71,4 @@ instacart |>
 ```
 
 
-```{r}
-
-```
 
