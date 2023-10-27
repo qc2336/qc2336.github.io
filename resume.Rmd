@@ -18,3 +18,13 @@ output:
    <li> Degree Bachelor of Science </li>
    <li> Major Biopsychology, Cognition and Neuroscience </li>
    <li> GPA 3.8/4.0 Major GPA 3.9/4.0 </li>
+
+<br>
+
+# Research Experience
+
+  **Massachusetts General Hospital**
+  <li>Research Project : Wearable Multimodality system to monitor physiological responses of Alzheimer Disease Patients in relation to the washing of Glymphatic System.</li>
+  
+  **Shanghai Jiaotong University**
+  <li>Research Project: Studying the Correlation between EEG and Thermal Comfort with Machine Learning Methods. </li>

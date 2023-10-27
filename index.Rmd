@@ -6,10 +6,19 @@ output:
     toc_float: true
     theme: cosmo
 ---
-# This is a website about me
+## Introduction
+
+<br>
+
+  Hi,my name is Qiran Chen. This is my website.
+
+<br>
 
 
-##
-[Resume](about.html)
+
+## About Me
+[Resume](resume.html) | [Github](https://github.com/qc2336) | [Email](qc2336@cumc.columbia.edu)
 
 
+## Plotly
+[plotly](plotly.html)

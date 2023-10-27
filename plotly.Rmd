@@ -1,0 +1,68 @@
+---
+title: "plotly question"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data(instacart)
+```
+
+```{r}
+instacart=instacart|>
+  janitor::clean_names()|>
+  drop_na()
+```
+
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### A Box Plot about Fresh Fruits and Fresh Vegetables
+
+```{r}
+instacart |>
+  filter(aisle%in%c("fresh fruits", "fresh vegetables"))|>
+  group_by(aisle,order_number)|>
+  summarize(order_number=sum(order_number))|>
+  mutate(text_label = str_c("order number", order_number, "aisle" , aisle)) |> 
+  plot_ly(x = ~aisle, y = ~order_number, type = "box", text = ~text_label, alpha = 0.5)
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### 
+
+```{r}
+instacart
+```
+
+### Bar Chart of Top 10 Product Reordered
+
+```{r}
+instacart |> 
+  filter(reordered%in%1)|>
+  count(product_name) |> 
+  arrange(desc(n))|>
+  head(10)|>
+  mutate(product_name = fct_reorder(product_name, n)) |> 
+  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "bar", colors = "viridis")
+```
+
+
+```{r}
+
+```
+
