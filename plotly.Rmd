@@ -57,6 +57,8 @@ ggplotly(aisle_graph)
   
   
 ```
+Column {data-width=350}
+-----------------------------------------------------------------------
 
 ### Bar Chart of Top 10 Product Reordered
 
