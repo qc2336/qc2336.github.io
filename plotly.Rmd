@@ -26,7 +26,7 @@ instacart=instacart|>
 
 
 
-Column {data-width=400}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
 ### A Box Plot about Fresh Fruits and Fresh Vegetables
@@ -40,7 +40,7 @@ instacart |>
 
 
 
-Column {data-width=350}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
 ### Number of Items in Each Aisle via Scatterplot
@@ -55,7 +55,7 @@ instacart|>
 ```
 
 
-Column {data-width=650}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
 ### Bar Chart of Top 10 Product Reordered
