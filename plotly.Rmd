@@ -13,6 +13,7 @@ library(p8105.datasets)
 library(plotly)
 ```
 
+
 ```{r}
 data(instacart)
 ```
@@ -38,7 +39,7 @@ instacart |>
 ```
 
 
-Column {data-width=500}
+Column {data-width=900}
 -----------------------------------------------------------------------
 
 ## Number of Items in Each Aisle via Scatterplot
@@ -57,7 +58,7 @@ ggplotly(aisle_graph)
   
   
 ```
-Column {data-width=500}
+Column {data-width=900}
 -----------------------------------------------------------------------
 
 ### Bar Chart of Top 10 Product Reordered
