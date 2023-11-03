@@ -46,17 +46,11 @@ Column {data-width=350}
 ### Number of Items in Each Aisle via Scatterplot
 
 ```{r}
-aisle_graph=instacart|>
+instacart|>
   count(aisle,name="n_items")|>
   filter(n_items>10000)|>
   mutate(aisle=fct_reorder(aisle,n_items))|>
-  ggplot(aes(x=aisle,y=n_items))+
-  geom_point()+
-  theme(axis.text.x = element_text(angle = 65, vjust = 1, hjust=1))+
-  ggtitle("Number of Items in Each Aisle")
-  
-ggplotly(aisle_graph)
-  
+  plot_ly(x = ~aisle, y = ~n_items,  type = "scatter")
   
 ```
 
