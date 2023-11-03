@@ -55,7 +55,7 @@ instacart|>
 ```
 
 
-Column {data-width=500}
+Column {data-width=400}
 -----------------------------------------------------------------------
 
 ### Bar Chart of Top 10 Product Reordered
