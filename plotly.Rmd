@@ -26,7 +26,7 @@ instacart=instacart|>
 
 
 
-
+Column {data-width=800}
 -----------------------------------------------------------------------
 
 ### A Box Plot about Fresh Fruits and Fresh Vegetables
@@ -39,7 +39,7 @@ instacart |>
 ```
 
 
-
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ## Number of Items in Each Aisle via Scatterplot
@@ -59,7 +59,7 @@ ggplotly(aisle_graph)
   
 ```
 
-
+Column {data-width=650}
 -----------------------------------------------------------------------
 
 ### Bar Chart of Top 10 Product Reordered
